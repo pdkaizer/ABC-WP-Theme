@@ -1,0 +1,27 @@
+<ul>
+ <li<?php if ( is_home() || is_single() || is_search() || is_archive() ) { echo ' class="current_page_item"'; } ?>><a href="<?php echo get_option('home'); ?>"><span>Home</span></a></li>
+ <li<?php if ( is_page('about-us')) { echo ' class="current_page_item"'; } ?>><a href="#">About Us</a></li>
+ <li<?php if ( is_page('services')) { echo ' class="current_page_item"'; } ?>><a href="#">Services</a></li>
+ <li<?php if ( is_page('products')) { echo ' class="current_page_item"'; } ?>><a href="#">Products</a></li>
+ <li<?php if ( is_page('contact'))  { echo ' class="current_page_item"'; } ?>><a href="#">Contact</a></li>
+</ul>
+
+
+<ul>
+	<li class="nav-blue"><h3><a href="/about">about</a></h3></li>
+	<li class="nav-red"><h3><a href="/curriculum">curriculum</a></h3></li>
+	<li class="nav-orange"><h3><a href="/video">video</a></h3></li>
+	<li class="nav-violet"><h3><a href="/research">research</a></h3></li>
+	<li class="nav-green"><h3><a href="/links">links</a></h3></li>
+</ul>
+
+
+<ul>
+	<li class="nav-blue"><h3><a href="/about" <?php if ( is_page('about'))  { echo ' class="active"'; } ?>>about</a></h3></li>
+	<li class="nav-red"><h3<?php if ( is_page('curriculum'))  { echo ' class="current_page_item"'; } ?>><a href="/curriculum">curriculum</a></h3></li>
+	<li class="nav-orange"><h3<?php if ( is_page('video'))  { echo ' class="current_page_item"'; } ?>><a href="/video">video</a></h3></li>
+	<li class="nav-violet"><h3<?php if ( is_page('research'))  { echo ' class="current_page_item"'; } ?>><a href="/research">research</a></h3></li>
+	<li class="nav-green"><h3<?php if ( is_page('links'))  { echo ' class="current_page_item"'; } ?>><a href="/links">links</a></h3></li>
+</ul>
+
+<?php if ( is_page(''))  { echo ' class="current_page_item"'; } ?>
